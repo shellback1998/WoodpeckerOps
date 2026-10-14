@@ -1,0 +1,21 @@
+[Unit]
+Description=WoodpeckerOps read-only MCP gateway
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=piadmin
+Group=piadmin
+WorkingDirectory=/opt/woodpeckerops
+EnvironmentFile=/etc/woodpeckerops/woodpeckerops.env
+ExecStart=/opt/woodpeckerops/.venv/bin/python -m woodpeckerops.server
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

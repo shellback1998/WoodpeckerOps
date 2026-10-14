@@ -1,0 +1,44 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*
+
+# Local backups
+*.bak
+*.backup
+*.pre-auth
+*.orig
+*~
+
+# Logs and runtime files
+*.log
+*.pid
+*.sqlite
+*.sqlite3
+
+# IDE and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local backups
+
+# Logs and runtime files
+
+# IDE and operating system
