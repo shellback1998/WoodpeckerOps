@@ -1,4 +1,4 @@
-# WoodpeckerOps v0.1.0 — devops-manager
+# WoodpeckerOps v1.0.0 — devops-manager
 
 Read-only FastMCP gateway for Scott Academy Woodpecker pipelines. It binds to 127.0.0.1:8793 and MUST NOT be publicly exposed until OAuth-compatible MCP authentication and access control are installed and tested. Cloudflare Tunnel alone is not an authentication mechanism.
 
